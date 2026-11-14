@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Treino de Lógica - Uniformes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>⚽ Treino de Lógica - Uniformes</h1>
+      <p class="sub">
+        Se os uniformes forem iguais, o time visitante MUDA para o uniforme 2.
+      </p>
+
+      <div class="times">
+        <!-- TIME 1 -->
+        <section class="card">
+          <h2>Time 1 - Mandante</h2>
+          <label>Nome do Time 1</label>
+          <input
+            type="text"
+            id="time1"
+            placeholder="Ex: Seleção Brasileira"
+            value="Seleção Brasileira"
+          />
+
+          <label>Uniforme Principal</label>
+          <select id="uniforme1">
+            <option value="amarelo">Amarelo</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="branco">Branco</option>
+          </select>
+
+          <label>Uniforme Reserva (Uniforme 2)</label>
+          <select id="reserva1">
+            <option value="azul">Azul</option>
+            <option value="branco">Branco</option>
+            <option value="preto">Preto</option>
+            <option value="vermelho">Vermelho</option>
+          </select>
+
+          <div class="camisa" id="camisa1">
+            <svg viewBox="0 0 36 38" role="img" aria-label="Uniforme do Time 1">
+              <path d="M11 3 17 6h2l6-3 9 6-4 10-5-3v20H11V16l-5 3L2 9l9-6Z" />
+            </svg>
+          </div>
+        </section>
+
+        <!-- TIME 2 -->
+        <section class="card">
+          <h2>Time 2 - Visitante</h2>
+          <label>Nome do Time 2</label>
+          <input
+            type="text"
+            id="time2"
+            placeholder="Ex: Inglaterra"
+            value="Inglaterra"
+          />
+
+          <label>Uniforme Principal</label>
+          <select id="uniforme2">
+            <option value="amarelo">Amarelo</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="branco">Branco</option>
+          </select>
+
+          <label>Uniforme Reserva (Uniforme 2)</label>
+          <select id="reserva2">
+            <option value="vermelho">Vermelho</option>
+            <option value="branco">Branco</option>
+            <option value="preto">Preto</option>
+            <option value="azul">Azul</option>
+          </select>
+
+          <div class="camisa" id="camisa2">
+            <svg viewBox="0 0 36 38" role="img" aria-label="Uniforme do Time 2">
+              <path d="M11 3 17 6h2l6-3 9 6-4 10-5-3v20H11V16l-5 3L2 9l9-6Z" />
+            </svg>
+          </div>
+        </section>
+      </div>
+
+      <button id="btnVerificar">Verificar Uniformes</button>
+
+      <div id="resultado" class="resultado">Aguardando verificação...</div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
