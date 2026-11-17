@@ -25,9 +25,15 @@ function atualizarPreviaUniformes() {
   aplicarCorCamisa('camisa2', uniforme1 === uniforme2 ? reserva2 : uniforme2);
 }
 
-document.getElementById('uniforme1')?.addEventListener('change', atualizarPreviaUniformes);
-document.getElementById('uniforme2')?.addEventListener('change', atualizarPreviaUniformes);
-document.getElementById('reserva2')?.addEventListener('change', atualizarPreviaUniformes);
+document
+  .getElementById('uniforme1')
+  ?.addEventListener('change', atualizarPreviaUniformes);
+document
+  .getElementById('uniforme2')
+  ?.addEventListener('change', atualizarPreviaUniformes);
+document
+  .getElementById('reserva2')
+  ?.addEventListener('change', atualizarPreviaUniformes);
 atualizarPreviaUniformes();
 
 if (btn) {
@@ -79,4 +85,8 @@ if (btn) {
     // Dica para debug no console
     console.log({ nome1, uniformeFinal1, nome2, uniformeFinal2 });
   });
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { aplicarCorCamisa, atualizarPreviaUniformes };
 }
